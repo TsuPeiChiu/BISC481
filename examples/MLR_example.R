@@ -1,15 +1,16 @@
 ######################################
-# 12.10.2016
+# 10.02.2019
 # Multiple Linear Regression (MLR) example
 # BISC 481
 ######################################
 
 ## Install packages
 # Bioconductor
-source("https://bioconductor.org/biocLite.R")
-biocLite()
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install()
 # DNAshapeR
-biocLite("DNAshapeR")
+BiocManager::install("DNAshapeR")
 # Caret
 install.packages("caret")
 
